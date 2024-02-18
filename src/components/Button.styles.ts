@@ -29,6 +29,6 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
     }} */
 
     // pegando a cor do tema
-    background-color: ${props => props.theme[props.varient]};
+    background-color: ${props => props.theme["green-500"]};
 
 `
