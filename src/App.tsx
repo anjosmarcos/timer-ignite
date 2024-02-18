@@ -1,14 +1,17 @@
 import { Button } from "./components/Button";
 
+import { ThemeProvider } from "styled-components"
+import { defaultTheme } from "./styles/themes/default";
+
 export function App() {
   return (
-      <>
-      <Button varient="primary" />
-      <Button varient="secondary" />
-      <Button varient="success" />
-      <Button varient="danger" />
-      <Button />
-      </>
+      <ThemeProvider theme={defaultTheme}>
+        <Button varient="primary" />
+        <Button varient="secondary" />
+        <Button varient="success" />
+        <Button varient="danger" />
+        <Button />
+    </ThemeProvider>
     )
 }
 
